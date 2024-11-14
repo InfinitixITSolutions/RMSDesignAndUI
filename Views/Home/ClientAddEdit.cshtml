@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Add Client";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">Client Details</h5>
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="SocietyName" class="form-label">Society Name</label>
+                                    <input type="email" class="form-control" id="SocietyName" aria-describedby="SocietyName">
+                                    <div id="emailHelp" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="ContactPerson" class="form-label">Contact Person</label>
+                                    <input type="text" class="form-control" id="ContactPerson" aria-describedby="ContactPerson">
+                                    <div id="emailHelp" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="ContactNumber" class="form-label">Contact Number</label>
+                                    <input type="text" class="form-control" id="ContactNumber" aria-describedby="ContactNumber">
+                                    <div id="ContactNumber" class="form-danger"></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row clearfix mt-2">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <label for="Address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="Address" aria-describedby="Address">
+                                    <div id="emailHelp" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                    <label for="Gates" class="form-label">Gates</label>
+                                    <input type="number" class="form-control" id="Gates" aria-describedby="Gates">
+                                    <div id="Gates" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                    <label for="Building" class="form-label">Building</label>
+                                    <input type="text" class="form-control" id="Building" aria-describedby="Building">
+                                    <div id="emailHelp" class="form-danger"></div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix mt-2">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="StateSelect" class="form-label">State</label>
+                                    <select id="state" class="form-control">
+                                        <option value="">Select  State</option>
+                                        <option value="state1">ABC</option>
+                                        <option value="state2">DEC</option>
+                                    </select>
+                                    <div id="StateHelp" class="form-text text-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label class="form-label">City</label>
+                                    <select id="City" class="form-control ">
+                                        <option value="">Select  City</option>
+                                        <option value="City1">ghh</option>
+                                        <option value="City2">dvdfz</option>
+                                    </select>
+                                    <div id="StateHelp" class="form-text text-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="ZipCode" class="form-label">ZipCode</label>
+                                    <input type="text" class="form-control" id="ZipCode" aria-describedby="ZipCode">
+                                    <div id="ZipCode" class="form-danger"></div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix mt-2">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="TotalFlates" class="form-label">Total Flates</label>
+                                    <input type="number" class="form-control" id="TotalFlates">
+                                    <div id="Gates" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="OnrollDate" class="form-label">Onroll Date</label>
+                                    <input type="text" class="form-control date" id="OnrollDate">
+                                    <div id="OnrollDate" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="SubscriptionAmount" class="form-label">Subscription Amount</label>
+                                    <input type="text" class="form-control" id="SubscriptionAmount">
+                                    <div id="SubscriptionAmount" class="form-danger"></div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix mt-2">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="ContractStartDate" class="form-label">Contract Start Date</label>
+                                    <input type="text" class="form-control date" id="ContractStartDate">
+                                    <div id="ContractStartDate" class="form-danger"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="ContractEndDate" class="form-label">Contract End Date</label>
+                                    <input type="text" class="form-control date" id="ContractEndDate">
+                                    <div id="ContractEndDate" class="form-danger"></div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix mt-3">
+                                <button type="submit" class="btn btn-primary col-lg-2">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $(".date").datepicker();
+        });
+    </script>
+}
+
+
